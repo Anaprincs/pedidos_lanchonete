@@ -12,8 +12,8 @@
     @livewireStyles
 </head>
 
-<body>
-    <div class="container">
+<body style="background: blueviolet">
+    <div class="container" >
         {{ $slot }}
     </div>
     @livewireScripts

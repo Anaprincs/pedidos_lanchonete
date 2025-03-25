@@ -12,8 +12,11 @@ class Cliente extends Model
         'nome',
         'endereco',
         'telefone',
-        'cpf',
-        'email',
-        'senha'
+        'cpf'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class); // referencia
+    }
 }
